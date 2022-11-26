@@ -10,12 +10,12 @@ const EmailLogin = () => {
         <div className="heading">Login</div>
         <div className="button-container">
           <button className="pl-button pl-button--active">Email</button>
-          <Link to='/phone'><button className="pl-button" id="secondary-button">
+          {/* <Link to='/phone'><button className="pl-button" id="secondary-button">
             Phone Number
-          </button> </Link>
-          {/* <Link to='/phone' className="pl-button" id="secondary-button"> 
+          </button> </Link> */}
+          <Link to='/phone' className="pl-button" id="secondary-button"> 
             Phone Number
-           </Link> */}
+           </Link>
         </div>
         <div className="input-group">
           <label htmlFor="email">Email</label>

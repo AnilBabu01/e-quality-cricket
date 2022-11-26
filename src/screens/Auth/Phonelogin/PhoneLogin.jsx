@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './phonelogin.scss'
 const PhoneLogin = () => {
     const handleSubmit = () => {};
@@ -7,7 +8,7 @@ const PhoneLogin = () => {
       <form onSubmit={handleSubmit} className="phone-form">
         <div className="heading">Login</div>
         <div className="button-container">
-          <button className="pl-button">Email</button>
+          <Link to='/'  className="pl-button">Email</Link>
           <button className="pl-button pl-button--active" id="secondary-button">
             Phone Number
           </button>
