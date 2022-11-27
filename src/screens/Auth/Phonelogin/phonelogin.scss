@@ -68,7 +68,7 @@ $line-btw-text: #9F9F9F;
           border-radius: 7px;
       }
       .sendotp{
-        margin: 65px 0;
+        margin: 63px 0;
         width: 100%;
     }
 
@@ -88,19 +88,38 @@ $line-btw-text: #9F9F9F;
           display: flex;
           align-items: center;
           justify-content: space-between;
+
+          .navi-button{
+            width: 49%;
+            height: 37px;
+            text-align: center;
+            text-decoration: none;
+
+              border-radius: 7px;
+              background: #F8F7FC;
+              font-size: .6rem;
+              font-weight: 600;
+              padding: 1.0em 0 0 0;
+              color: #9A9999;
+              letter-spacing: 1px;
+              cursor: pointer!important;
+              transition: box-shadow 80ms ease-in;
+          }
            
           button{
-              width: 49%;
+              width: 47%;
               border: none;
           }
       
           .pl-button {
+            
+            height: 35px;
               margin: 0.5em 0 0;
               border-radius: 7px;
               background: #F8F7FC;
               font-size: .6rem;
               font-weight: 600;
-              padding: 1em;
+              padding: 0.3em 0;
               color: #9A9999;
               letter-spacing: 1px;
               cursor: pointer!important;

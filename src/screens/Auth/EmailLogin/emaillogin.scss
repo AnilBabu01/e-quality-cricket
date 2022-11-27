@@ -46,7 +46,7 @@ $line-btw-text: #9F9F9F;
       background: $line-btw-text;
       display: block;
       position: absolute;
-      top: 30%;
+      top: 28%;
       left: 0;
     }
     .newusertag:after{
@@ -56,7 +56,7 @@ $line-btw-text: #9F9F9F;
       background: $line-btw-text;
       display: block;
       position: absolute;
-      top: 30%;
+      top: 28%;
       right: 0;
     }
 
@@ -88,7 +88,25 @@ $line-btw-text: #9F9F9F;
     display: flex;
     align-items: center;
     justify-content: space-between;
-     
+
+    .navi-button{
+      width: 47%;
+      height: 37px;
+      text-align: center;
+      text-decoration: none;
+
+        border-radius: 7px;
+        background: #F8F7FC;
+        font-size: .6rem;
+        font-weight: 600;
+        padding: 1.0em 0 0 0;
+        color: #9A9999;
+        letter-spacing: 1px;
+        cursor: pointer!important;
+        transition: box-shadow 80ms ease-in;
+    }
+
+  
     button{
         width: 49%;
         border: none;

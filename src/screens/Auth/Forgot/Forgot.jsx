@@ -10,7 +10,7 @@ const Forgot = () => {
         <div className='sendotp'>
         <div className="input-group">
           <label htmlFor="email">Email Address</label>
-          <input required type="email" id="email" placeholder="enter email" />
+          <input required type="email" name="email" id="email" placeholder="enter email" />
         </div>
         </div>
           
