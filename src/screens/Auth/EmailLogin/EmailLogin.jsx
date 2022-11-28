@@ -1,6 +1,25 @@
 import { Link } from "react-router-dom";
+import React, {useState} from 'react'
 import "./emaillogin.scss";
+
+
+const initialState = {
+  email: "",
+  password: "",
+}
+
+
 const EmailLogin = () => {
+
+  const [state, setState] = useState(initialState);
+
+  const { email, password} = state;
+
+  const handleInputChange = (e) => {
+    const {name, value} = e.target;
+    setState({...state, [name]: value});
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
   };
@@ -19,7 +38,7 @@ const EmailLogin = () => {
         </div>
         <div className="input-group">
           <label htmlFor="email">Email</label>
-          <input required type="email" id="email" placeholder="enter email" />
+          <input required type="email" id="email" name="email" placeholder="enter email" value={email}  onChange={handleInputChange}/>
         </div>
         <div className="input-group">
           <label htmlFor="password">Password</label>
@@ -27,7 +46,9 @@ const EmailLogin = () => {
             required
             type="password"
             id="password"
+            name="password"
             placeholder="enter password"
+            value={password}  onChange={handleInputChange}
           />
         </div>
         <p>Forgot Password ?</p>

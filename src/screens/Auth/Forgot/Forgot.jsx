@@ -15,10 +15,8 @@ const Forgot = () => {
         </div>
           
         <div className="input-group">
-          <button className="login-btn">Send OTP</button>
+          <button className="login-btn">continue</button>
         </div>
-        {/* <span className="newusertag">New to Quality Cricket</span>
-      <button className='creatbtn'>Create Account</button> */}
       </form>
     </div>
   )
