@@ -3,10 +3,17 @@ import OtpInput from "react-otp-input";
 import "./registerform.scss";
 
 const VerifyMobile = ({ title, description, mobileNo, handleVerify }) => {
-  const [opt, setOpt] = useState("");
+  const [otp, setOtp] = useState("");
 
   return (
-    <form onSubmit={handleVerify} className="verify-form">
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        if (otp.length < 6) return;
+        handleVerify(otp);
+      }}
+      className="verify-form"
+    >
       <div className="verify-heading">{title}</div>
       <div className="verify-desc">{description}</div>
       <div className="mobile-no">{mobileNo}</div>
@@ -14,9 +21,9 @@ const VerifyMobile = ({ title, description, mobileNo, handleVerify }) => {
         <label htmlFor="otp">OTP</label>
         <OtpInput
           id="otp"
-          value={opt}
+          value={otp}
           className=""
-          onChange={setOpt}
+          onChange={setOtp}
           numInputs={6}
           containerStyle="otp-container"
           inputStyle="otp-input"

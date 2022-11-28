@@ -6,19 +6,34 @@ const Register = () => {
   const [mobileNo, setMobileNo] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
-    setVerify(true);
+    const { email, fullName, password, mobileNumber } = Object.fromEntries(
+      new FormData(e.currentTarget)
+    );
+
+    if (
+      typeof email === "string" &&
+      typeof password === "string" &&
+      typeof fullName === "string" &&
+      typeof mobileNumber === "string"
+    ) {
+      console.log({ email, fullName, password, mobileNumber });
+      setVerify(true);
+    }
   };
-  const handleVerify = (e) => {
-    e.preventDefault();
+
+  const handleVerify = (otp) => {
+    console.log({ otp });
+    setVerify(false);
   };
+
   const RegisterInputs = () => {
     return (
       <form onSubmit={handleSubmit} className="register-form">
         <div className="heading">Create Account</div>
         <div className="input-group">
-          <label htmlFor="full-name">Full name</label>
+          <label htmlFor="fullName">Full name</label>
           <input
-            name="full-name"
+            name="fullName"
             required
             type="text"
             id="full-name"
@@ -28,10 +43,10 @@ const Register = () => {
         <div className="input-group">
           <label htmlFor="mobile-number">Mobile Number</label>
           <input
-            name="mobile-number"
+            name="mobileNumber"
             required
             type="tel"
-            id="mobile-number"
+            id="mobileNumber"
             placeholder="enter mobile number"
           />
         </div>
@@ -50,6 +65,8 @@ const Register = () => {
           <input
             name="password"
             required
+            title="*At least six characters"
+            pattern=".{6,}"
             type="password"
             id="password"
             placeholder="enter password"
