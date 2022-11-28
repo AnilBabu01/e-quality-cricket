@@ -1,0 +1,9 @@
+.auth-container {
+  width: 100%;
+  height: calc(100vh - 64px);
+  display: grid;
+  place-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}

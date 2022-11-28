@@ -1,16 +1,15 @@
-import { useState } from 'react'
+import { useState } from "react";
+import Navigation from "./components/header/Navigation";
 
-import Register from './screens/Auth/Register'
+import Auth from "./screens/Auth";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
-      <Register/>
-        
+      <Navigation />
+      <Auth />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
