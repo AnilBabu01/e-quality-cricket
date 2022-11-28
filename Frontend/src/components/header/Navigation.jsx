@@ -45,7 +45,9 @@ const Navigation = () => {
           })}
         </ul>
         <div className="nav-action">
-          <button>Login</button>
+          <Link to="/">
+            <button>Login</button>
+          </Link>
         </div>
       </div>
       {/* <Outlet /> */}

@@ -1,23 +1,20 @@
 import { Link } from "react-router-dom";
-import React, {useState} from 'react'
+import React, { useState } from "react";
 import "./emaillogin.scss";
-
 
 const initialState = {
   email: "",
   password: "",
-}
-
+};
 
 const EmailLogin = () => {
-
   const [state, setState] = useState(initialState);
 
-  const { email, password} = state;
+  const { email, password } = state;
 
   const handleInputChange = (e) => {
-    const {name, value} = e.target;
-    setState({...state, [name]: value});
+    const { name, value } = e.target;
+    setState({ ...state, [name]: value });
   };
 
   const handleSubmit = (e) => {
@@ -32,13 +29,21 @@ const EmailLogin = () => {
           {/* <Link to='/phone'><button className="pl-button" id="secondary-button">
             Phone Number
           </button> </Link> */}
-          <Link to='/phone' className="navi-button" id="secondary-button"> 
+          <Link to="/phone" className="navi-button" id="secondary-button">
             Phone Number
-           </Link>
+          </Link>
         </div>
         <div className="input-group">
           <label htmlFor="email">Email</label>
-          <input required type="email" id="email" name="email" placeholder="enter email" value={email}  onChange={handleInputChange}/>
+          <input
+            required
+            type="email"
+            id="email"
+            name="email"
+            placeholder="enter email"
+            value={email}
+            onChange={handleInputChange}
+          />
         </div>
         <div className="input-group">
           <label htmlFor="password">Password</label>
@@ -48,16 +53,21 @@ const EmailLogin = () => {
             id="password"
             name="password"
             placeholder="enter password"
-            value={password}  onChange={handleInputChange}
+            value={password}
+            onChange={handleInputChange}
           />
         </div>
-        <p>Forgot Password ?</p>
-          
+        <Link to="/forget" className="forget-link">
+          {"Forgot Password ?"}
+        </Link>
+
         <div className="input-group">
           <button className="login-btn">Login</button>
         </div>
         <span className="newusertag">New to Quality Cricket</span>
-      <button className='creatbtn'>Create Account</button>
+        <Link to="/register" className="creatbtn">
+          Create Account
+        </Link>
       </form>
     </div>
   );

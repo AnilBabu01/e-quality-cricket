@@ -2,8 +2,7 @@ $primary-color: #ffffff;
 $secondary-color: #cd098f;
 $input-text-color: #333333;
 $input-placeholder-color: #b7b7b7;
-$line-btw-text: #9F9F9F;
-
+$line-btw-text: #9f9f9f;
 
 .login-container {
   width: 100vw;
@@ -14,7 +13,6 @@ $line-btw-text: #9F9F9F;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  
 
   .login-form {
     min-width: 350px;
@@ -27,10 +25,9 @@ $line-btw-text: #9F9F9F;
     flex-direction: column;
     align-items: center;
     position: absolute;
-    
   }
-  
-  .newusertag{
+
+  .newusertag {
     position: relative;
     width: 86%;
     height: 35px;
@@ -39,41 +36,42 @@ $line-btw-text: #9F9F9F;
     color: $line-btw-text;
   }
 
-    .newusertag:before{
-      content:" ";
-      height: 1px;
-      width: 65px;
-      background: $line-btw-text;
-      display: block;
-      position: absolute;
-      top: 28%;
-      left: 0;
-    }
-    .newusertag:after{
-      content:" ";
-      height: 1px;
-      width: 65px;
-      background: $line-btw-text;
-      display: block;
-      position: absolute;
-      top: 28%;
-      right: 0;
-    }
-
-    .creatbtn{
-      position: relative;
-      width: 88%;
-      height: 35px;
-      top: 29px;
-      border: none;
-      cursor: pointer;
-      background: #DDDDDD;
-      border-radius: 7px;
+  .newusertag:before {
+    content: " ";
+    height: 1px;
+    width: 65px;
+    background: $line-btw-text;
+    display: block;
+    position: absolute;
+    top: 28%;
+    left: 0;
   }
-  
+  .newusertag:after {
+    content: " ";
+    height: 1px;
+    width: 65px;
+    background: $line-btw-text;
+    display: block;
+    position: absolute;
+    top: 28%;
+    right: 0;
+  }
+
+  .creatbtn {
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    color: $input-text-color;
+    width: 88%;
+    padding-block: 0.5rem;
+    top: 29px;
+    border: none;
+    cursor: pointer;
+    background: #dddddd;
+    border-radius: 7px;
+  }
 }
 .login-form {
-  
   .heading {
     margin-top: 20px;
     font-weight: 500;
@@ -81,7 +79,7 @@ $line-btw-text: #9F9F9F;
     line-height: 45px;
   }
   .button-container {
-  // border: 1px solid rgb(136, 255, 0);
+    // border: 1px solid rgb(136, 255, 0);
 
     width: 88%;
     height: 8%;
@@ -89,48 +87,47 @@ $line-btw-text: #9F9F9F;
     align-items: center;
     justify-content: space-between;
 
-    .navi-button{
+    .navi-button {
       width: 47%;
       height: 37px;
       text-align: center;
       text-decoration: none;
 
-        border-radius: 7px;
-        background: #F8F7FC;
-        font-size: .6rem;
-        font-weight: 600;
-        padding: 1.0em 0 0 0;
-        color: #9A9999;
-        letter-spacing: 1px;
-        cursor: pointer!important;
-        transition: box-shadow 80ms ease-in;
+      border-radius: 7px;
+      background: #f8f7fc;
+      font-size: 0.6rem;
+      font-weight: 600;
+      padding: 1em 0 0 0;
+      color: #9a9999;
+      letter-spacing: 1px;
+      cursor: pointer !important;
+      transition: box-shadow 80ms ease-in;
     }
 
-  
-    button{
-        width: 49%;
-        border: none;
+    button {
+      width: 49%;
+      border: none;
     }
 
     .pl-button {
-        margin: 0.5em 0 0;
-        border-radius: 7px;
-        background: #F8F7FC;
-        font-size: .6rem;
-        font-weight: 600;
-        padding: 1em;
-        color: #9A9999;
-        letter-spacing: 1px;
-        cursor: pointer!important;
-        transition: box-shadow 80ms ease-in;
+      margin: 0.5em 0 0;
+      border-radius: 7px;
+      background: #f8f7fc;
+      font-size: 0.6rem;
+      font-weight: 600;
+      padding: 1em;
+      color: #9a9999;
+      letter-spacing: 1px;
+      cursor: pointer !important;
+      transition: box-shadow 80ms ease-in;
     }
-    .pl-button--active{
-        background: #F8F7FC;
-        border: 1px solid $secondary-color;
-        color: $secondary-color;
-        border-radius: 7px;
+    .pl-button--active {
+      background: #f8f7fc;
+      border: 1px solid $secondary-color;
+      color: $secondary-color;
+      border-radius: 7px;
     }
-}
+  }
   .input-group {
     display: flex;
     flex-direction: column;
@@ -151,7 +148,7 @@ $line-btw-text: #9F9F9F;
       font-size: 10px;
       line-height: 15px;
     }
-    
+
     .login-btn {
       background: $secondary-color;
       font-weight: 500;
@@ -165,10 +162,10 @@ $line-btw-text: #9F9F9F;
       border-radius: 0.5rem;
     }
   }
-p{
-  width: 88%;
-  text-align: right;
-  color: $secondary-color;
+  .forget-link {
+    width: 88%;
+    text-align: right;
+    padding-top: 0.5rem;
+    color: $secondary-color;
+  }
 }
-}
-
