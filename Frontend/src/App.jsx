@@ -1,3 +1,4 @@
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CreatePassword from "./screens/Auth/createPassword/CreatePassword";
 import EmailLogin from "./screens/Auth/EmailLogin/EmailLogin";
@@ -17,7 +18,7 @@ function App() {
         </Routes>
       </div>
     </Router>
-  );
-}
+    )
+    }
 
 export default App;
