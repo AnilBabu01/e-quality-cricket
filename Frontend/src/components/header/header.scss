@@ -29,15 +29,18 @@
       justify-content: space-evenly;
       .nav-item {
         cursor: pointer;
-        .active-nav {
-          color: $secondary-color;
-          text-decoration: underline;
-        }
+        text-decoration: none;
+        color: $nav-item-color;
+      }
+      .active-nav {
+        color: $secondary-color;
+        text-decoration: underline;
+        text-underline-offset: 3px;
       }
     }
     & > .nav-action {
       justify-self: end;
-      button {
+      .login-btn {
         font-family: "Inter";
         color: $primary-color;
         padding: 0.5rem 1.5rem;
