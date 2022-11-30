@@ -29,7 +29,7 @@ const EmailLogin = () => {
           {/* <Link to='/phone'><button className="pl-button" id="secondary-button">
             Phone Number
           </button> </Link> */}
-          <Link to="/phone" className="navi-button" id="secondary-button">
+          <Link to="/phonelogin" className="navi-button" id="secondary-button">
             Phone Number
           </Link>
         </div>
@@ -57,7 +57,7 @@ const EmailLogin = () => {
             onChange={handleInputChange}
           />
         </div>
-        <Link to="/forget" className="forget-link">
+        <Link to="/forgot" className="forget-link">
           {"Forgot Password ?"}
         </Link>
 

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./registerform.scss";
 import VerifyMobile from "./VerifyMobile";
+
 const Register = () => {
   const [verify, setVerify] = useState(false);
   const [mobileNo, setMobileNo] = useState("");

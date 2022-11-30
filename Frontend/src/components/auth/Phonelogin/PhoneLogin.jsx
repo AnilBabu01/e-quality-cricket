@@ -21,10 +21,14 @@ const PhoneLogin = () => {
         </div>
           
         <div className="input-group">
-          <button className="login-btn">Send OTP</button>
+          <Link to="/otpverify" className="login-btn">
+          Send OTP
+        </Link>
         </div>
         <span className="newusertag">New to Quality Cricket</span>
-      <button className='creatbtn'>Create Account</button>
+        <Link to="/register" className="creatbtn">
+          Create Account
+        </Link>
       </form>
     </div>
   )
