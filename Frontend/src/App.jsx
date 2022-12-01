@@ -4,7 +4,7 @@ import EmailLogin from "./components/auth/EmailLogin/EmailLogin";
 
 import CreatePassword from "./components/auth/createPassword/CreatePassword";
 import NewLogin from "./components/auth/NewLogin/NewLogin";
-import PareForgot from "./components/auth/Forgot/Forgot";
+import Forgot from "./components/auth/Forgot/Forgot";
 
 import Header from "./components/header/Header";
 import Home from "./screens/Home";
@@ -16,8 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<EmailLogin />} />
           <Route path="/phonelogin" element={<NewLogin/>} />
-          <Route path="/forgot" element= {<PareForgot/>} />
-          {/* <Route path="/forget" element={<Forgot />} /> */}
+          <Route path="/forgot" element= {<Forgot/>} />
           <Route path="/create" element={<CreatePassword />} />
           <Route path="/register" element={<Auth />} />
           <Route path="/home" element={<Home />} />
