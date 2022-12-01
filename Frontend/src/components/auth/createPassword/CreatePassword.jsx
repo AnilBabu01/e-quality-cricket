@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './CreatePassword.scss';
 
 
@@ -27,7 +28,7 @@ const CreatePassword = () => {
         </div>
           
         <div className="input-group">
-          <button className="login-btn">Send OTP</button>
+          <Link to='/home' className="login-btn">Save</Link>
         </div>
       </form>
     </div>

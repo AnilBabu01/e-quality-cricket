@@ -1,7 +1,7 @@
 import { useState } from "react";
 import OtpInput from "react-otp-input";
-
-const VerifyForgot = ({ title, description, emaildesc, handleVerify }) => {
+import "./verifyForgot.scss";
+const VerifyForgot = ({ title, description, emaildesc, emailotp, handleVerify }) => {
   const [otp, setOtp] = useState("");
 
   return (
@@ -15,7 +15,7 @@ const VerifyForgot = ({ title, description, emaildesc, handleVerify }) => {
       className="emailverify-form">
       <div className="emailverify-heading">{title}</div>
       <div className="emailverify-desc">{description}</div>
-      <div className="email-add">{emaildesc}</div>
+      <div className="email-add" >{emaildesc}" please enter the otp aise bol rha "</div>
       <div className="input-group">
         <label htmlFor="otp">OTP</label>
         <OtpInput

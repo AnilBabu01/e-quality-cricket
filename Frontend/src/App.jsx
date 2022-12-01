@@ -4,10 +4,9 @@ import EmailLogin from "./components/auth/EmailLogin/EmailLogin";
 
 import CreatePassword from "./components/auth/createPassword/CreatePassword";
 import NewLogin from "./components/auth/NewLogin/NewLogin";
-import PareForgot from "./components/auth/PareForgot/PareForgot";
+import PareForgot from "./components/auth/Forgot/Forgot";
 
 import Header from "./components/header/Header";
-import CreatePassword from "./components/auth/createPassword/CreatePassword";
 import Home from "./screens/Home";
 function App() {
   return (

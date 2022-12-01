@@ -73,7 +73,7 @@ const StyledBadge = styled(BadgeUnstyled)(
   `
 );
 const Navigation = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [cartCount, setCartCount] = useState(0);
   const [notificationCount, setNotificationCount] = useState(0);
   return (

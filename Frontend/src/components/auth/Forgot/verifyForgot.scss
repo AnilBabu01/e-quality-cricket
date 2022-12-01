@@ -1,3 +1,6 @@
+@import "../../../utils/variables";
+
+
 .verify-container {
     width: 100%;
     height: calc(100vh - 64px);
@@ -7,6 +10,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
+    border: 1px solid red;
   
     .verify-form{
       // min-width: 350px;

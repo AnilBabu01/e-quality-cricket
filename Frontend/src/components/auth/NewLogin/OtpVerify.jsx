@@ -1,5 +1,6 @@
 import { useState } from "react";
 import OtpInput from "react-otp-input";
+import { Link } from "react-router-dom";
 import "./NewLogin.scss";
 
 const OtpVerify = ({ title, description, mobileNo, handleVerify }) => {
@@ -32,9 +33,9 @@ const OtpVerify = ({ title, description, mobileNo, handleVerify }) => {
       </div>
 
       <div className="verify-btn-container">
-        <button type="submit" className="verify-btn">
+      <Link  to="/home" type="submit" className="verify-btn">
           Verify
-        </button>
+        </Link>
       </div>
     </form>
     </div>

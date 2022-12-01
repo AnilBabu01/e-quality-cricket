@@ -233,6 +233,8 @@
   padding: 1.5rem;
   width: 100%;
   & > .verify-btn {
+    text-decoration: none;
+    text-align: center;
     background: $secondary-color;
     font-weight: 500;
     color: $primary-color;
