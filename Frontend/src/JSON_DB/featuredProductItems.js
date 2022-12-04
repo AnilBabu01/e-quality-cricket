@@ -73,4 +73,13 @@ export default [
     costPrice: "$280",
     category: "accessories",
   },
+  {
+    id: 8,
+    name: "SS Gutsy Cricket Helmet",
+    image: cricketHelmet,
+    sellingPrice: "$210",
+    costPrice: "$280",
+    category: "MRF",
+  },
+  
 ];
