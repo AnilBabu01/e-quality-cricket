@@ -8,8 +8,6 @@ import Forgot from "./components/auth/Forgot/Forgot";
 
 import Header from "./components/header/Header";
 import Home from "./screens/Home";
-// import Footer from "./components/footer/Footer";
-import TryFooter from "./components/TestFooter/TryFooter";
 import NewFooter from "./components/TestFooter/NewFooter";
 function App() {
   return (
@@ -24,7 +22,6 @@ function App() {
           <Route path="/register" element={<Auth />} />
           <Route  index path="/home" element={<Home />}>
           </Route>
-          <Route path="/footer" element={<TryFooter/>}/>
           <Route path="/newfooter" element={<NewFooter/>} />
         </Routes>
       </div>
