@@ -15,7 +15,8 @@ const VerifyForgot = ({ title, description, emaildesc, emailotp, handleVerify })
       className="emailverify-form">
       <div className="emailverify-heading">{title}</div>
       <div className="emailverify-desc">{description}</div>
-      <div className="email-add" >{emaildesc}" please enter the otp aise bol rha "</div>
+      <div className="email-add" ><span style={{color: "#3F51B5"}}>{emaildesc}</span> Please enter it below to complete verification.
+</div>
       <div className="input-group">
         <label htmlFor="otp">OTP</label>
         <OtpInput

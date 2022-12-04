@@ -143,6 +143,8 @@
     .login-btn {
       background: $secondary-color;
       font-weight: 500;
+      position: relative;
+      top: 29px;  
       text-decoration: none;
       text-align: center;
       color: $primary-color;

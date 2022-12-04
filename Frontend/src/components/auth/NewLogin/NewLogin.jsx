@@ -7,6 +7,10 @@ const VivekPLogin = () => {
     const [verify, setVerify] = useState(false);
     const [mobileNo, setMobileNo] = useState("");
 
+    const handleInputChange = (e) =>{
+        setMobileNo(e.target.value);
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -19,7 +23,6 @@ const VivekPLogin = () => {
     };
 
     const handleVerify = (otp) => {
-        console.log({ otp });
         setVerify(false);
         setMobileNo(mobileNo)
     };
@@ -38,7 +41,7 @@ const VivekPLogin = () => {
                     <div className='sendotp'>
                         <div className="input-group">
                             <label htmlFor="tel">Phone Number</label>
-                            <input required name="mobileNumber" type="tel" id="mobileNumber" placeholder="enter phone number" />
+                            <input required name="mobileNumber" type="tel" id="mobileNumber" value={mobileNo} onChange={handleInputChange} placeholder="enter phone number" />
                         </div>
                     </div>
 

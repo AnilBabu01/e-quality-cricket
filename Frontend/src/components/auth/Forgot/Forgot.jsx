@@ -8,22 +8,13 @@ const Forgot = () => {
 
     const handleInputChange = (e) =>{
         setEmail(e.target.value);
-        console.log(email);
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-
-        // const { emailAddress } = Object.fromEntries(
-        //     new FormData(e.currentTarget)
-        //     );
-            // console.log({ emailAddress });
-            // setEmail(emailAddress)
-            // console.log({email});
             setVerify(true);
     };
 
     const handleVerify = (otp) => {
-        console.log({ otp });
         setVerify(false);
         setEmail(emailAddress)
     };
@@ -57,7 +48,6 @@ const Forgot = () => {
                     title={"Verification required"}
                     description={"To continue, complete this verification step. We've sent an OTP to the email"}
                     emaildesc={email}
-                    emailotp={"plase enter ..."}
                     handleVerify={handleVerify}
                 />
             )}
