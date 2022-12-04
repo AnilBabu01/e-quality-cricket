@@ -9,6 +9,7 @@ import Box from "@mui/material/Box";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
 import sliderImg from "../../assets/slider1.png";
+import NewFooter from "../../components/TestFooter/NewFooter";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -68,6 +69,7 @@ const Home = () => {
         <FeaturedProducts />
         <AboutUs />
       </div>
+      <NewFooter/>
     </div>
   );
 };
