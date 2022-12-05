@@ -9,6 +9,7 @@ import Forgot from "./components/auth/Forgot/Forgot";
 import Header from "./components/header/Header";
 import Home from "./screens/Home";
 import NewFooter from "./components/TestFooter/NewFooter";
+import FeaturedProduct from "./components/featuredProduct/FeaturedProduct";
 function App() {
   return (
     <Router>
@@ -20,9 +21,8 @@ function App() {
           <Route path="/forgot" element= {<Forgot/>} />
           <Route path="/create" element={<CreatePassword />} />
           <Route path="/register" element={<Auth />} />
-          <Route  index path="/home" element={<Home />}>
-          </Route>
-          <Route path="/newfooter" element={<NewFooter/>} />
+          <Route  path="/home" element={<Home />} />
+          <Route path="/featuredproducts" element={<FeaturedProduct />} />
         </Routes>
       </div>
     </Router>

@@ -74,12 +74,106 @@ export default [
     category: "accessories",
   },
   {
-    id: 8,
+    id: 9,
     name: "SS Gutsy Cricket Helmet",
     image: cricketHelmet,
     sellingPrice: "$210",
     costPrice: "$280",
     category: "MRF",
+  },
+  {
+    id: 10,
+    name: "MRF Genius Grand Edition 1.0 English Willow Cricket Bat",
+    image: cricketBat,
+    sellingPrice: "$100",
+    costPrice: "$190",
+    category: "cricket bat",
+  },
+  {
+    id: 11,
+    name: "MRF Genius Grand Edition 1.0 English Willow Cricket Bat",
+    image: cricketBat,
+
+    sellingPrice: "$100",
+    costPrice: "$190",
+    category: "cricket bat",
+  },
+  {
+    id: 12,
+    name: "MRF Genius Grand Edition 1.0 English Willow Cricket Bat",
+    image: cricketBat,
+
+    sellingPrice: "$100",
+    costPrice: "$190",
+    category: "cricket bat",
+  },
+  {
+    id: 4,
+    name: "MRF Genius Grand Edition 1.0 English Willow Cricket Bat",
+    image: cricketBat,
+
+    sellingPrice: "$100",
+    costPrice: "$190",
+    category: "cricket bat",
+  },
+  {
+    id: 5,
+    name: "MRF Genius Grand Edition 1.0 English Willow Cricket Bat",
+    image: cricketBat,
+
+    sellingPrice: "$100",
+    costPrice: "$190",
+    category: "cricket bat",
+  },
+  {
+    id: 7,
+    name: "MRF Legend VK 18 SR Cricket Adult Kit Bag",
+    image: cricketKit,
+    sellingPrice: "$210",
+    costPrice: "$280",
+    category: "accessories",
+  },
+  {
+    id: 8,
+    name: "SS Gutsy Cricket Helmet",
+    image: cricketHelmet,
+    sellingPrice: "$210",
+    costPrice: "$280",
+    category: "accessories",
+  },
+  {
+    id: 9,
+    name: "SS Gutsy Cricket Helmet",
+    image: cricketHelmet,
+    sellingPrice: "$210",
+    costPrice: "$280",
+    category: "MRF",
+  },
+  {
+    id: 10,
+    name: "MRF Genius Grand Edition 1.0 English Willow Cricket Bat",
+    image: cricketBat,
+    sellingPrice: "$100",
+    costPrice: "$190",
+    category: "cricket bat",
+  },
+  {
+    id: 11,
+    name: "MRF Genius Grand Edition 1.0 English Willow Cricket Bat",
+    image: cricketBat,
+
+    sellingPrice: "$100",
+    costPrice: "$190",
+    category: "cricket bat",
+  },
+  {
+    id: 12,
+    name: "MRF Genius Grand Edition 1.0 English Willow Cricket Bat",
+    image: cricketBat,
+
+    sellingPrice: "$100",
+    costPrice: "$190",
+    category: "cricket bat",
   },
   
 ];
