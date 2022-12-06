@@ -1,0 +1,49 @@
+@import "../../utils/variables.scss";
+
+.filter-section{
+    margin-left: 66px;
+    img{
+    width: 16px;
+    height: 16px;
+}
+.filter-head{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.05em;
+position: relative;
+bottom: 2px;
+color: $input-text-color;
+margin-left: 6px;
+
+}
+ .filter-group{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin-top: 30px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: $input-text-color;
+
+    .expand-icon{
+        width: 10px;
+    position: relative;
+    top: 6px;
+    }
+
+    .filter-line{
+        width: 220px;
+        height: 0px;
+        margin: 0;
+        padding: 0;
+        border: 1.2px solid #C3C3C3;
+    }
+ }
+}

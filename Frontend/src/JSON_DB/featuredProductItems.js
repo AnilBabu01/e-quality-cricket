@@ -108,7 +108,7 @@ export default [
     category: "cricket bat",
   },
   {
-    id: 4,
+    id: 13,
     name: "MRF Genius Grand Edition 1.0 English Willow Cricket Bat",
     image: cricketBat,
 
@@ -117,7 +117,7 @@ export default [
     category: "cricket bat",
   },
   {
-    id: 5,
+    id: 14,
     name: "MRF Genius Grand Edition 1.0 English Willow Cricket Bat",
     image: cricketBat,
 
@@ -126,7 +126,7 @@ export default [
     category: "cricket bat",
   },
   {
-    id: 7,
+    id: 15,
     name: "MRF Legend VK 18 SR Cricket Adult Kit Bag",
     image: cricketKit,
     sellingPrice: "$210",
@@ -134,7 +134,7 @@ export default [
     category: "accessories",
   },
   {
-    id: 8,
+    id: 16,
     name: "SS Gutsy Cricket Helmet",
     image: cricketHelmet,
     sellingPrice: "$210",
@@ -142,7 +142,7 @@ export default [
     category: "accessories",
   },
   {
-    id: 9,
+    id: 17,
     name: "SS Gutsy Cricket Helmet",
     image: cricketHelmet,
     sellingPrice: "$210",
@@ -150,7 +150,7 @@ export default [
     category: "MRF",
   },
   {
-    id: 10,
+    id: 18,
     name: "MRF Genius Grand Edition 1.0 English Willow Cricket Bat",
     image: cricketBat,
     sellingPrice: "$100",
@@ -158,7 +158,7 @@ export default [
     category: "cricket bat",
   },
   {
-    id: 11,
+    id: 19,
     name: "MRF Genius Grand Edition 1.0 English Willow Cricket Bat",
     image: cricketBat,
 
@@ -167,7 +167,7 @@ export default [
     category: "cricket bat",
   },
   {
-    id: 12,
+    id: 20,
     name: "MRF Genius Grand Edition 1.0 English Willow Cricket Bat",
     image: cricketBat,
 
