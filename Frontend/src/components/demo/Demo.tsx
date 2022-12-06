@@ -22,7 +22,6 @@ const useRowStyles = makeStyles({
   }
 });
 
-
 function createData(name: string) {
   return {
     name,
@@ -83,13 +82,7 @@ function Row(props: { row: ReturnType<typeof createData> }) {
   // const [open, setOpen] = React.useState(false);
   const classes = useRowStyles();
 
-  // console.log("row", row);
-  // for (const key in row) {
-  //   if (Object.prototype.hasOwnProperty.call(row, key)) {
-  //     const element = row[key];
-  //     console.log("element", element);
-  //   }
-  // }
+
   return (
     <React.Fragment>
       <TableRow className={classes.root} style={{ background: "#a1a9d3" }}>
