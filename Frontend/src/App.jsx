@@ -8,8 +8,8 @@ import Forgot from "./components/auth/Forgot/Forgot";
 
 import Header from "./components/header/Header";
 import Home from "./screens/Home";
-import NewFooter from "./components/TestFooter/NewFooter";
 import FeaturedProduct from "./components/featuredProduct/FeaturedProduct";
+import Demo from "./components/demo/Demo";
 function App() {
   return (
     <Router>
@@ -23,6 +23,7 @@ function App() {
           <Route path="/register" element={<Auth />} />
           <Route  path="/home" element={<Home />} />
           <Route path="/featuredproducts" element={<FeaturedProduct />} />
+          <Route path="/demo" element={<Demo/>}/>
         </Routes>
       </div>
     </Router>

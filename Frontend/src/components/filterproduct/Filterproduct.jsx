@@ -9,9 +9,9 @@ const Filterproduct = () => {
         <img src={filterIcon} alt="" />&nbsp;<span className='filter-head'>FILTERS</span>
         <div className='filter-group'>
           <span><span className='expand-icon'><ExpandMoreRoundedIcon  /></span>COLLECTION</span> 
-          <hr className='filter-line'/>
+          <p className='filter-line' />
           <span><span className='expand-icon'><ExpandMoreRoundedIcon /></span>VENDOR</span> 
-          <hr className='filter-line'/>
+          <p className='filter-line'/>
           <span><span className='expand-icon'><ExpandMoreRoundedIcon /></span>PRODUCT TYPE</span> 
           <hr className='filter-line'/>
           <span><span className='expand-icon'><ExpandMoreRoundedIcon /></span>AVAILABILITY</span> 
