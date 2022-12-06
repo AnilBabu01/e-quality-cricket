@@ -22,38 +22,6 @@ const useRowStyles = makeStyles({
   }
 });
 
-function dataCollection(name: string) {
-  return {
-    name,
-    children: [
-      {
-        key: 21,
-        name: "All Products",
-        user: <Checkbox></Checkbox>
-      },
-      {
-        key: 22,
-        name: "Cricket Accessories",
-        user: <Checkbox></Checkbox>
-      },
-      {
-        key: 23,
-        name: "English Willow Bats",
-        user: <Checkbox></Checkbox>
-      },
-      {
-        key: 24,
-        name: "Junior Range",
-        user: <Checkbox></Checkbox>
-      },
-      {
-        key: 25,
-        name: "Kashmir Willow Bats",
-        user: <Checkbox></Checkbox>
-      }
-    ]
-  };
-}
 
 function createData(name: string) {
   return {
@@ -156,7 +124,7 @@ function Row(props: { row: ReturnType<typeof createData> }) {
 
 const rows = [
   // createData({ moduleName :String,  functionName :String,  featureName :String, userTypeList:Array}),
-  dataCollection("COLLECTION"),
+  createData("COLLECTION"),
   createData("VENDOR"),
   createData("PRODUCT TYPE"),
   createData("AVAILABILITY"),
