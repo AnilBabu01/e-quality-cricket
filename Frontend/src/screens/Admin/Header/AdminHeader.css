@@ -1,0 +1,97 @@
+.adminmainheader {
+  position: relative;
+}
+
+.adminnavbar {
+  position: absolute;
+  margin-left: 220px;
+  display: flex;
+  width: 85.1%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+
+  padding-left: 18px;
+  padding-right: 39px;
+  scroll-padding: 1;
+}
+
+.adminnavbar p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #000000;
+}
+
+.sliderdiv {
+  position: absolute;
+}
+
+.searchmaindiv {
+  width: 323px;
+  height: 45px;
+  background: #ffffff;
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.searchmaindiv input {
+  margin-left: 17px;
+  border: navajowhite;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.searchmaindiv input:focus {
+  outline: none;
+}
+.searchbtn {
+  width: 35px;
+  height: 35px;
+  background: #3f51b5;
+  border-radius: 4px;
+  border: none;
+  margin-right: 15px;
+}
+
+.profilemaindiv {
+  height: 45px;
+  margin-left: 31px;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.rightmaindiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1285px) {
+  .adminnavbar {
+    width: 80.1%;
+  }
+}
+
+@media screen and (max-width: 1111px) {
+  .adminnavbar {
+    width: 78.1%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .adminnavbar {
+    width: 76.1%;
+  }
+}
