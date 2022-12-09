@@ -57,7 +57,7 @@
 }
 
 .choosebtn {
-  width: 36%;
+  width: 61%;
   height: 35px;
   border: none;
   background: #3f51b5;
@@ -201,7 +201,6 @@
   outline: none;
 }
 
-
 .Quantitydivbtn input {
   width: 57px;
   height: 28px;
@@ -215,7 +214,8 @@
   font-size: 14px;
   line-height: 17px;
   color: #a5a4a4;
-  padding-left: 1rem;
+  text-align: center;
+ 
 }
 
 .Quantitydivbtn input:focus {
@@ -240,4 +240,21 @@
   line-height: 17px;
   color: #000000;
   margin-bottom: 3px;
+}
+
+.choosefilediv {
+  position: relative;
+  width: 50%;
+}
+.over-lay {
+  position: absolute;
+  height: 4rem;
+  width: 61%;
+  opacity: 0;
+}
+
+.choosebtnmaindin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

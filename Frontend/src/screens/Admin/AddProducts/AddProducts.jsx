@@ -1,7 +1,19 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AddIcon from "@mui/icons-material/Add";
 import "./AddProducts.css";
 const AddProducts = ({ setopendashboard }) => {
+  const [quantity, setquantity] = useState(0);
+
+  const increaseQty = () => {
+    if (quantity > 100) return;
+    setquantity(quantity + 1);
+  };
+
+  const decreaseQty = () => {
+    if (quantity <= 0) return;
+    setquantity(quantity - 1);
+  };
+
   useEffect(() => {
     setopendashboard(true);
   }, []);
@@ -37,13 +49,24 @@ const AddProducts = ({ setopendashboard }) => {
                     <div className="inputdiv">
                       <p>Colour</p>
                       <input type="text" placeholder="enter product color" />
+                      <input
+                        accept="image/*"
+                        id="icon-button-file"
+                        type="file"
+                        capture="environment"
+                      />
                     </div>
                     <div className="Quantitydiv">
                       <p>Quantity</p>
                       <div className="Quantitydivbtn">
-                        <button>-</button>
-                        <input type="text" />
-                        <button>+</button>
+                        <button onClick={decreaseQty}>-</button>
+                        <input
+                          type="text"
+                          name="quantity"
+                          value={quantity}
+                          onChange={(e) => setquantity(e.target.value)}
+                        />
+                        <button onClick={increaseQty}>+</button>
                       </div>
                     </div>
                     <div className="inputdivDes">
@@ -62,8 +85,15 @@ const AddProducts = ({ setopendashboard }) => {
               <div className="leftrightmaindiv">
                 <div className="leftbottomdiv">
                   <p>Upload product bar code</p>
-                  <div>
-                    <button className="choosebtn">Choose file</button>
+                  <div className="choosebtnmaindin">
+                    <div className="choosefilediv">
+                      <input
+                        className="over-lay"
+                        type="file"
+                        placeholder="Choose file"
+                      />
+                      <button className="choosebtn">Choose file</button>
+                    </div>
                     <button className="nochoose">No Choose file</button>
                   </div>
                 </div>

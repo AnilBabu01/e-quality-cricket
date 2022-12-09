@@ -30,7 +30,7 @@ const Sidebar = () => {
                 {/* <img src={dash} /> */}
 
                 <DashboardIcon style={{ marginRight: "1rem" }} />
-                <spna className="linkspan"> Dashboard</spna>
+                <span className="linkspan"> Dashboard</span>
               </NavLink>
             </li>
             <li className="nav-item">
@@ -41,7 +41,7 @@ const Sidebar = () => {
                 to="/addproducts"
               >
                 <img src={add} />
-                <spna className="linkspan">AddProducts</spna>
+                <span className="linkspan">AddProducts</span>
               </NavLink>
             </li>
 
@@ -53,7 +53,7 @@ const Sidebar = () => {
                 to="/allproducts "
               >
                 <img src={Products} />
-                <spna className="linkspan">All Products </spna>
+                <span className="linkspan">All Products </span>
               </NavLink>
             </li>
 
@@ -65,7 +65,7 @@ const Sidebar = () => {
                 to="/orders"
               >
                 <img src={order} />
-                <spna className="linkspan">Order</spna>
+                <span className="linkspan">Order</span>
               </NavLink>
             </li>
             <li className="nav-item">
@@ -76,7 +76,7 @@ const Sidebar = () => {
                 to="/reports"
               >
                 <img src={reports} />
-                <spna className="linkspan">Reports</spna>
+                <span className="linkspan">Reports</span>
               </NavLink>
             </li>
             <li className="nav-item">
@@ -87,7 +87,7 @@ const Sidebar = () => {
                 to="/profile"
               >
                 <img src={profile} />
-                <spna className="linkspan">Profile</spna>
+                <span className="linkspan">Profile</span>
               </NavLink>
             </li>
           </ul>
